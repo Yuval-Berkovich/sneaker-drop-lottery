@@ -1,0 +1,123 @@
+{
+  "common": {
+    "skip": "SKIP →",
+    "enterDraw": "Enter the draw",
+    "verify": "Verify",
+    "resend": "Resend code",
+    "emailUs": "Email us →"
+  },
+  "nav": {
+    "brand": "SOLE",
+    "drops": "DROPS / 04",
+    "admin": "ADMIN"
+  },
+  "ticker": "DROP 04 · BLACK CHROME · ENTRIES OPEN · ONE ENTRY PER VERIFIED IDENTITY · WINNERS DRAWN LIVE",
+  "hero": {
+    "eyebrow": "LIMITED DROP · ENTRIES OPEN",
+    "headlineLine1": "Air Jordan 4",
+    "headlineLine2": "'Black Chrome'",
+    "byline": "EMINEM × CARHARTT",
+    "lede": "\"The friends-and-family pair that never had a fair chance. Until now.\"",
+    "scrollCue": "SCROLL TO ENTER",
+    "pillStyleKey": "STYLE",
+    "pillStyleValue": "136027.019",
+    "pillPriceKey": "PRICE",
+    "pillPriceValue": "₪ 1,200",
+    "pillDrawnKey": "DRAWN",
+    "pillDrawnValue": "12.05.26",
+    "railLeft": "CAT · 04 / FOOTWEAR",
+    "railRight": "EXHIBIT · BLACK CHROME"
+  },
+  "story": {
+    "eyebrow": "CHAPTER 02 · THE STORY",
+    "headline": "Ten pairs. One city. Never on shelves.",
+    "p1": "In 2015, Carhartt and Eminem stitched a friends-and-family run of Air Jordan 4s for Shady Records' inner circle in Detroit. Roughly ten pairs were made. None were sold. Most never left the city.",
+    "p2": "The shoe was named for what you couldn't quite see — chrome flecks woven through black workwear canvas, the kind of detail that only reveals itself under the right light. It became one of the most quietly mythic Jordan 4s ever produced.",
+    "pullquote": "\"Some shoes you collect. This one you wait for.\"",
+    "p3": "Drop 04 is not a retro. It's the lottery the original release never had. 1,200 pairs, drawn live, one shot per verified identity. The friends-and-family experience, finally for everyone.",
+    "fact1Number": "10",
+    "fact1Label": "ORIGINAL PAIRS · 2015",
+    "fact2Number": "₪30k+",
+    "fact2Label": "AVG. RESALE · LAST 24 MO",
+    "fact3Number": "1,200",
+    "fact3Label": "PAIRS IN THIS DROP"
+  },
+  "detail": {
+    "eyebrow": "CHAPTER 03 · IN DETAIL",
+    "headline": "Look closer.",
+    "index1": "01",
+    "label1": "THE COLLAB MARKS",
+    "index2": "02",
+    "label2": "FORM, FROM ABOVE",
+    "index3": "03",
+    "label3": "TRANSLUCENT SOLE"
+  },
+  "enter": {
+    "eyebrow": "CHAPTER 04 · ENTER",
+    "headline": "One name. One pair. One draw.",
+    "body": "Submit your details below. We verify by email and SMS, then enter you into the live draw. The algorithm is published. The random seed is recorded. No back doors.",
+    "trust1": "One entry per verified identity",
+    "trust2": "Draws are live-streamed",
+    "trust3": "₪1,200 — card charged only if selected",
+    "trust4": "Random seed recorded on chain",
+    "countdownLabel": "ENTRIES CLOSE IN",
+    "formTitle": "Submit your entry",
+    "formSubtitle": "Verified identity. One shot.",
+    "labelEmail": "EMAIL ADDRESS",
+    "labelPhone": "PHONE",
+    "labelSize": "SHOE SIZE (US)",
+    "emailPlaceholder": "you@domain.com",
+    "phonePlaceholder": "50 123 4567",
+    "consent": "I confirm I am over 16 and that this is my only entry.",
+    "footnote": "By entering you agree to fair-draw terms and email/SMS verification.",
+    "errEmail": "Enter a valid email address.",
+    "errPhone": "Enter a valid phone number.",
+    "errSize": "Select a size.",
+    "errConsent": "Please confirm to continue.",
+    "otpTitle": "Verify your entry",
+    "otpSubtitle": "We sent a 6-digit code to {email}",
+    "otpError": "Code doesn't match. Try again.",
+    "selectedHeading": "Selected.",
+    "selectedSub": "DROP 04 · BLACK CHROME · YOURS",
+    "selectedFootnote": "Check your email for next steps. Card not charged until pickup."
+  },
+  "faq": {
+    "eyebrow": "CHAPTER 05 · FAQ",
+    "headline": "Questions, answered.",
+    "lede": "If your question isn't here, we're a quick email away.",
+    "q1": "How does the draw work?",
+    "a1": "Submit your details, verify by email and SMS, and you're entered. On the draw date, 1,200 names are selected from the entry pool. If you're picked, we email you within minutes. Card is charged only after selection.",
+    "q2": "How do I know the draw is fair?",
+    "a2": "We use Node's crypto.randomInt — the same primitive used in cryptographic key generation. The random seed is logged at draw time. The full entry list and seed are publicly verifiable. No hidden weighting. No back doors.",
+    "q3": "When am I charged?",
+    "a3": "Only after you're selected. We collect card details at entry for verification, but no charge happens unless your name is drawn. You'll have 24 hours after selection to confirm before we charge the ₪1,200.",
+    "q4": "Returns and exchanges?",
+    "a4": "Limited-drop sneakers are non-returnable. We sell exactly what's photographed — original packaging, all extras, never worn. If your pair arrives defective or in the wrong size, we'll replace or refund within 14 days of delivery.",
+    "q5": "How do I pick the right size?",
+    "a5": "Air Jordan 4s run true to size for most. If you're between sizes, go down half a size — the canvas upper stretches with wear. Sizing chart with cm/EU equivalents lives in the entry form.",
+    "q6": "Why identity verification?",
+    "a6": "Because resale bots flood every drop. By verifying email and SMS, we ensure each entry represents one real person. The same identity can't enter twice. That's how we get pairs into the hands of people who actually want to wear them."
+  },
+  "footer": {
+    "tagline": "DROP 04 · BLACK CHROME · EMINEM × CARHARTT",
+    "closing": "Made with care in Tel Aviv · 2026 · SOLE"
+  },
+  "splash": {
+    "tagline": "DROP 04 · BLACK CHROME · SOLE"
+  },
+  "toast": {
+    "submitError": "Something went wrong. Try again.",
+    "botDetected": "Verification failed. Refresh and try again.",
+    "otpWrong": "Code doesn't match. Try again.",
+    "otpResent": "New code sent.",
+    "network": "Connection lost. Check your network."
+  },
+  "error": {
+    "title": "Something broke.",
+    "body": "An unexpected error interrupted the drop. Try again.",
+    "retry": "Try again",
+    "notFoundTitle": "Page not found.",
+    "notFoundBody": "This drop doesn't exist. Head back to the entry.",
+    "home": "Back to SOLE"
+  }
+}
