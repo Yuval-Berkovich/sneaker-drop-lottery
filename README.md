@@ -1,6 +1,6 @@
 # SOLE — Drop 04 · Black Chrome
 
-**Live:** [sneaker-drop-lottery.netlify.app](https://sneaker-drop-lottery.netlify.app)
+**Live:** [sneaker-drop-lottery.netlify.app](https://sneaker-drop-lottery.netlify.app/en)
 
 A single-page sneaker drop lottery experience for a fictional release of the
 **Air Jordan 4 "Black Chrome" (Eminem × Carhartt)** — 1,200 pairs, drawn live,
