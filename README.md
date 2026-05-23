@@ -1,6 +1,6 @@
 # SOLE — Drop 04 · Black Chrome
 
-**Live:** _coming soon — Vercel URL goes here after first deploy_
+**Live:** [sneaker-drop-lottery.netlify.app](https://sneaker-drop-lottery.netlify.app)
 
 A single-page sneaker drop lottery experience for a fictional release of the
 **Air Jordan 4 "Black Chrome" (Eminem × Carhartt)** — 1,200 pairs, drawn live,
@@ -29,7 +29,7 @@ bot protection. The lottery is a demo — every verified entry is "selected".
 | Bot defence | [Cloudflare Turnstile](https://www.cloudflare.com/products/turnstile/) (invisible) |
 | Icons       | [lucide-react](https://lucide.dev)                                                 |
 | Quality     | ESLint · Prettier · Husky · lint-staged                                            |
-| Deploy      | [Vercel](https://vercel.com)                                                       |
+| Deploy      | [Netlify](https://netlify.com)                                                     |
 
 ## Local setup
 
@@ -86,11 +86,15 @@ A Husky pre-commit hook runs `lint-staged` (ESLint + Prettier) on staged files.
 ## Deployment
 
 1. Push this repo to GitHub.
-2. Import it into [Vercel](https://vercel.com/new) — the framework preset is
-   detected automatically.
-3. Add the three environment variables above in the Vercel project settings.
+2. Import it into [Netlify](https://app.netlify.com/start) — the Next.js
+   framework is detected automatically and `@netlify/plugin-nextjs` handles the
+   App Router, middleware, and API routes with no extra config.
+3. Add the three environment variables above in **Site configuration →
+   Environment variables**.
 4. Deploy. Pushes to `main` deploy automatically; `/en` and `/he` both work in
-   production.
+   production. Note that `NEXT_PUBLIC_*` variables are baked in at build time —
+   if you change them later, run **Trigger deploy → Clear cache and deploy
+   site** so the new values reach the bundle.
 
 ## License
 
