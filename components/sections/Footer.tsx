@@ -12,8 +12,10 @@ export function Footer() {
   return (
     <footer className="relative border-t border-accent-border px-6 pb-16 pt-24 text-center md:px-20">
       <div className="relative z-[1] mx-auto max-w-[1320px]">
-        {/* wordmark — letter-by-letter reveal */}
+        {/* wordmark — letter-by-letter reveal. dir=ltr keeps S-O-L-E in order
+            under RTL (otherwise the inline-flex children render as E-L-O-S). */}
         <motion.div
+          dir="ltr"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-80px' }}

@@ -1,10 +1,9 @@
 {
   "common": {
-    "skip": "דלגי →",
     "enterDraw": "הזיני להגרלה",
     "verify": "אמתי",
     "resend": "שלחי קוד חדש",
-    "emailUs": "כתבי לנו →"
+    "emailUs": "כתבי לנו"
   },
   "nav": {
     "brand": "SOLE",
@@ -58,14 +57,14 @@
     "body": "מלאי את הפרטים. נאמת באימייל וב-SMS, ואז תיכנסי להגרלה החיה. האלגוריתם פתוח. הזרע האקראי מתועד. אין דלתות אחוריות.",
     "trust1": "ניסיון אחד לכל זהות מאומתת",
     "trust2": "ההגרלה משודרת בלייב",
-    "trust3": "₪1,200 — חיוב רק אם נבחרת",
+    "trust3": "<price>₪1,200</price> — חיוב רק אם נבחרת",
     "trust4": "זרע אקראי מתועד בבלוקצ׳יין",
     "countdownLabel": "ההרשמה נסגרת בעוד",
     "formTitle": "הגישי את הניסיון שלך",
     "formSubtitle": "זהות מאומתת. ניסיון אחד.",
     "labelEmail": "אימייל",
     "labelPhone": "טלפון",
-    "labelSize": "מידה (US)",
+    "labelSize": "מידה <unit>(US)</unit>",
     "emailPlaceholder": "you@domain.com",
     "phonePlaceholder": "50 123 4567",
     "consent": "אני מאשרת שאני מעל גיל 16 וזו ההרשמה היחידה שלי.",
@@ -101,9 +100,6 @@
   "footer": {
     "tagline": "DROP 04 · BLACK CHROME · EMINEM × CARHARTT",
     "closing": "Made with care in Tel Aviv · 2026 · SOLE"
-  },
-  "splash": {
-    "tagline": "DROP 04 · BLACK CHROME · SOLE"
   },
   "toast": {
     "submitError": "משהו השתבש. נסי שוב.",

@@ -1,10 +1,9 @@
 {
   "common": {
-    "skip": "SKIP →",
     "enterDraw": "Enter the draw",
     "verify": "Verify",
     "resend": "Resend code",
-    "emailUs": "Email us →"
+    "emailUs": "Email us"
   },
   "nav": {
     "brand": "SOLE",
@@ -58,14 +57,14 @@
     "body": "Submit your details below. We verify by email and SMS, then enter you into the live draw. The algorithm is published. The random seed is recorded. No back doors.",
     "trust1": "One entry per verified identity",
     "trust2": "Draws are live-streamed",
-    "trust3": "₪1,200 — card charged only if selected",
+    "trust3": "<price>₪1,200</price> — card charged only if selected",
     "trust4": "Random seed recorded on chain",
     "countdownLabel": "ENTRIES CLOSE IN",
     "formTitle": "Submit your entry",
     "formSubtitle": "Verified identity. One shot.",
     "labelEmail": "EMAIL ADDRESS",
     "labelPhone": "PHONE",
-    "labelSize": "SHOE SIZE (US)",
+    "labelSize": "SHOE SIZE <unit>(US)</unit>",
     "emailPlaceholder": "you@domain.com",
     "phonePlaceholder": "50 123 4567",
     "consent": "I confirm I am over 16 and that this is my only entry.",
@@ -101,9 +100,6 @@
   "footer": {
     "tagline": "DROP 04 · BLACK CHROME · EMINEM × CARHARTT",
     "closing": "Made with care in Tel Aviv · 2026 · SOLE"
-  },
-  "splash": {
-    "tagline": "DROP 04 · BLACK CHROME · SOLE"
   },
   "toast": {
     "submitError": "Something went wrong. Try again.",

@@ -1,13 +1,16 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { ArrowRight } from 'lucide-react';
+import { useLocale, useTranslations } from 'next-intl';
 import { Eyebrow } from '@/components/ui/Eyebrow';
 import { Reveal } from '@/components/ui/Reveal';
 import { Accordion, type AccordionItemData } from '@/components/ui/Accordion';
+import { cn } from '@/lib/utils';
 
 export function FAQ() {
   const t = useTranslations('faq');
   const tCommon = useTranslations('common');
+  const locale = useLocale();
 
   const items: AccordionItemData[] = [1, 2, 3, 4, 5, 6].map((i) => ({
     id: `q${i}`,
@@ -36,9 +39,14 @@ export function FAQ() {
           <Reveal delay={0.24}>
             <a
               href="mailto:hello@sole.co"
-              className="mt-6 inline-flex font-mono text-[13px] uppercase tracking-[0.12em] text-accent underline decoration-1 underline-offset-4 transition-colors hover:text-fg-primary"
+              className="mt-6 inline-flex items-center gap-2 font-mono text-[13px] uppercase tracking-[0.12em] text-accent underline decoration-1 underline-offset-4 transition-colors hover:text-fg-primary"
             >
               {tCommon('emailUs')}
+              <ArrowRight
+                size={14}
+                aria-hidden="true"
+                className={cn('shrink-0', locale === 'he' && 'rotate-180')}
+              />
             </a>
           </Reveal>
         </div>

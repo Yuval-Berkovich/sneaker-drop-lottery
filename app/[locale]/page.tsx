@@ -1,5 +1,4 @@
 import { setRequestLocale } from 'next-intl/server';
-import { SplashIntro } from '@/components/sections/SplashIntro';
 import { Nav } from '@/components/sections/Nav';
 import { Hero } from '@/components/sections/Hero';
 import { Story } from '@/components/sections/Story';
@@ -13,7 +12,6 @@ export default function HomePage({ params }: { params: { locale: string } }) {
 
   return (
     <>
-      <SplashIntro />
       <Nav />
       <main className="relative z-10">
         <Hero />

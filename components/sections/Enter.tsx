@@ -16,7 +16,7 @@ type EnterState =
   | { kind: 'otp'; entryId: string; email: string }
   | { kind: 'selected' };
 
-function TrustBadge({ children, delay }: { children: string; delay: number }) {
+function TrustBadge({ children, delay }: { children: React.ReactNode; delay: number }) {
   return (
     <div className="flex items-center gap-3.5 font-body text-[14px] font-medium text-fg-secondary">
       <span
@@ -53,7 +53,12 @@ export function Enter() {
             <Eyebrow>{t('eyebrow')}</Eyebrow>
           </Reveal>
           <Reveal delay={0.08}>
-            <h2 className="mt-10 max-w-[14ch] text-balance font-display text-display-section text-fg-primary">
+            {/* unicode-bidi: isolate keeps the three Hebrew sentence periods
+                anchored to their phrases when the headline wraps lines. */}
+            <h2
+              style={{ unicodeBidi: 'isolate' }}
+              className="mt-10 max-w-[14ch] text-balance font-display text-display-section text-fg-primary"
+            >
               {t('headline')}
             </h2>
           </Reveal>
@@ -66,7 +71,11 @@ export function Enter() {
             <div className="mt-10 flex flex-col gap-4">
               <TrustBadge delay={0}>{t('trust1')}</TrustBadge>
               <TrustBadge delay={0.6}>{t('trust2')}</TrustBadge>
-              <TrustBadge delay={1.2}>{t('trust3')}</TrustBadge>
+              <TrustBadge delay={1.2}>
+                {t.rich('trust3', {
+                  price: (chunks) => <span dir="ltr">{chunks}</span>,
+                })}
+              </TrustBadge>
               <TrustBadge delay={1.8}>{t('trust4')}</TrustBadge>
             </div>
           </Reveal>

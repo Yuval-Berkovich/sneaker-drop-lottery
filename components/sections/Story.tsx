@@ -10,7 +10,12 @@ function FactCard({ number, label, delay }: { number: string; label: string; del
       delay={delay}
       className="rounded-lg border border-accent-border p-6 transition-colors duration-300 hover:border-[rgba(167,139,250,0.35)] hover:bg-[rgba(167,139,250,0.02)]"
     >
-      <div className="font-display text-[48px] font-bold leading-none tracking-[-0.02em] text-fg-primary">
+      {/* dir=ltr so "10", "₪30k+", "1,200" render with digits and symbols
+          in the correct visual order inside the RTL Hebrew layout. */}
+      <div
+        dir="ltr"
+        className="font-display text-[48px] font-bold leading-none tracking-[-0.02em] text-fg-primary"
+      >
         {number}
       </div>
       <div className="mt-3.5 font-mono text-[11px] uppercase tracking-[0.14em] text-fg-muted">

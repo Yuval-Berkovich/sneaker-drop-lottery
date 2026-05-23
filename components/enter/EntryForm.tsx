@@ -32,7 +32,7 @@ function Field({
   error,
   children,
 }: {
-  label: string;
+  label: React.ReactNode;
   error?: string;
   children: React.ReactNode;
 }) {
@@ -128,6 +128,7 @@ export function EntryForm({ onEntered }: EntryFormProps) {
             type="email"
             inputMode="email"
             autoComplete="email"
+            dir="ltr"
             placeholder={t('emailPlaceholder')}
             hasError={!!errors.email}
             {...register('email')}
@@ -158,7 +159,12 @@ export function EntryForm({ onEntered }: EntryFormProps) {
           </div>
         </Field>
 
-        <Field label={t('labelSize')} error={msg(errors.sizeUs?.message)}>
+        <Field
+          label={t.rich('labelSize', {
+            unit: (chunks) => <span dir="ltr">{chunks}</span>,
+          })}
+          error={msg(errors.sizeUs?.message)}
+        >
           <Controller
             name="sizeUs"
             control={control}
