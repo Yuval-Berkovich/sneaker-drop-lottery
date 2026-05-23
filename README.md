@@ -1,5 +1,7 @@
 # SOLE — Drop 04 · Black Chrome
 
+**Live:** _coming soon — Vercel URL goes here after first deploy_
+
 A single-page sneaker drop lottery experience for a fictional release of the
 **Air Jordan 4 "Black Chrome" (Eminem × Carhartt)** — 1,200 pairs, drawn live,
 one entry per verified identity.
@@ -32,8 +34,8 @@ bot protection. The lottery is a demo — every verified entry is "selected".
 ## Local setup
 
 ```bash
-git clone <your-repo-url>
-cd sole-sneaker-drop
+git clone https://github.com/Yuval-Berkovich/sneaker-drop-lottery.git
+cd sneaker-drop-lottery
 npm install
 cp .env.local.example .env.local   # already filled with working test keys
 npm run dev
